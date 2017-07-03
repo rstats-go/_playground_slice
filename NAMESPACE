@@ -2,4 +2,6 @@
 
 export(sum_double)
 export(sum_int)
+export(numbers)
+
 useDynLib(goslice)

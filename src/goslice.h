@@ -5,6 +5,15 @@
 /* Start of preamble from import "C" comments.  */
 
 
+#line 3 "/Users/romain/git/rstats-go/_playground_slice/src/go/src/main/main.go"
+
+  #define USE_RINTERNALS
+  #include <R.h>
+  #include <Rinternals.h>
+
+  SEXP IntegerVectorFromGoSlice( void* data, int ) ;
+
+#line 1 "cgo-generated-wrapper"
 
 
 /* End of preamble from import "C" comments.  */
@@ -56,6 +65,8 @@ extern "C" {
 extern GoInt32 SumInt(GoSlice p0);
 
 extern GoFloat64 SumDouble(GoSlice p0);
+
+extern SEXP Numbers(GoInt32 p0);
 
 #ifdef __cplusplus
 }

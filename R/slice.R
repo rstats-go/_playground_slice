@@ -8,3 +8,8 @@ sum_int <- function(x) {
 sum_double <- function(x) {
   .Call("sum_double", x, PACKAGE = "goslice")
 }
+
+#' @export
+numbers <- function(n){
+  .Call("numbers", n, PACKAGE = "goslice")
+}
